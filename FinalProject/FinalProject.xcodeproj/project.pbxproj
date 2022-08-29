@@ -11,6 +11,11 @@
 		ECC7C23A28BA2D6200533606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7C23928BA2D6200533606 /* ContentView.swift */; };
 		ECC7C23C28BA2D6600533606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC7C23B28BA2D6600533606 /* Assets.xcassets */; };
 		ECC7C23F28BA2D6600533606 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC7C23E28BA2D6600533606 /* Preview Assets.xcassets */; };
+		ECDC421228BD04270026FBCD /* NeufileGrotesk_font in Resources */ = {isa = PBXBuildFile; fileRef = ECDC421128BD04270026FBCD /* NeufileGrotesk_font */; };
+		ECDC421528BD0A930026FBCD /* NeufileGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */; };
+		ECDC421728BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */; };
+		ECDC421928BD17430026FBCD /* Sec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421828BD17430026FBCD /* Sec.swift */; };
+		ECDC421D28BD21940026FBCD /* Thi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421C28BD21940026FBCD /* Thi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		ECC7C23928BA2D6200533606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECC7C23B28BA2D6600533606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC7C23E28BA2D6600533606 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECDC421128BD04270026FBCD /* NeufileGrotesk_font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NeufileGrotesk_font; sourceTree = "<group>"; };
+		ECDC421328BD04510026FBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeufileGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeufileGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		ECDC421828BD17430026FBCD /* Sec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec.swift; sourceTree = "<group>"; };
+		ECDC421C28BD21940026FBCD /* Thi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,15 @@
 		ECC7C23628BA2D6200533606 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				ECDC421328BD04510026FBCD /* Info.plist */,
 				ECC7C23728BA2D6200533606 /* FinalProjectApp.swift */,
 				ECC7C23928BA2D6200533606 /* ContentView.swift */,
+				ECDC421828BD17430026FBCD /* Sec.swift */,
+				ECDC421C28BD21940026FBCD /* Thi.swift */,
 				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
+				ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */,
+				ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */,
+				ECDC421128BD04270026FBCD /* NeufileGrotesk_font */,
 				ECC7C23D28BA2D6600533606 /* Preview Content */,
 			);
 			path = FinalProject;
@@ -126,6 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC7C23F28BA2D6600533606 /* Preview Assets.xcassets in Resources */,
+				ECDC421728BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf in Resources */,
+				ECDC421228BD04270026FBCD /* NeufileGrotesk_font in Resources */,
+				ECDC421528BD0A930026FBCD /* NeufileGrotesk-Medium.ttf in Resources */,
 				ECC7C23C28BA2D6600533606 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC7C23A28BA2D6200533606 /* ContentView.swift in Sources */,
+				ECDC421D28BD21940026FBCD /* Thi.swift in Sources */,
 				ECC7C23828BA2D6200533606 /* FinalProjectApp.swift in Sources */,
+				ECDC421928BD17430026FBCD /* Sec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +292,9 @@
 				DEVELOPMENT_TEAM = LKTZZ7TC6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,9 @@
 				DEVELOPMENT_TEAM = LKTZZ7TC6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
