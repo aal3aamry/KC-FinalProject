@@ -10,7 +10,7 @@ import SwiftUI
 struct JoinPage: View {
     
     @State private var showingConfirmation = false
-    @State private var categoryName: String = "categoryName"
+    @State private var categoryName: String = "Category Name *"
     
         //
     
@@ -20,6 +20,15 @@ struct JoinPage: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     
     @State private var image: UIImage?
+    
+    
+    
+    @State var StartinPrice = ""
+    @State var BusinessEmail = ""
+    @State var FirstName = ""
+    @State var LastName = ""
+  
+
     var body: some View {
         
         
@@ -69,23 +78,11 @@ struct JoinPage: View {
 
                 
                         
-                Text(categoryName)
-                    .onTapGesture {
-                        showingConfirmation = true
-                    }
-                
-                    .confirmationDialog("Choose One Of These Categorys", isPresented: $showingConfirmation)
-                {
-                    Button("Developer"){ categoryName = "Developer"}
-                    Button("Designer"){ categoryName = "Designer"}
-                    Button("Photographer"){ categoryName = "Photographer"}
-                    
-                  
-                    }
+               
                 
                 
                //
-                /*
+                
                  TextField("First Name *", text: $FirstName)
                  .foregroundColor(.black)
                  .padding(.all)
@@ -110,20 +107,66 @@ struct JoinPage: View {
                  .background(Color.white)
                  .cornerRadius(10)
                  
-                 */
-                
+                 
+                VStack{
+                    HStack{
+                Text(categoryName)
+                            .foregroundColor(.gray.opacity(0.6))
+                        Spacer()
+
+                        Image(systemName: "chevron.down.circle")
+                            .foregroundColor(.gray.opacity(0.6))
+                    }
                     
-                    
+                    .onTapGesture {
+                        showingConfirmation = true
+                    }
                 
-                /*
-                 TextField("First Name *", text: $FirstName)
+                    .confirmationDialog("Choose One Of These Categorys", isPresented: $showingConfirmation)
+                {
+                    Button("Developer"){ categoryName = "Developer"}
+                    Button("Designer"){ categoryName = "Designer"}
+                    Button("Photographer"){ categoryName = "Photographer"}
+                    
+                  
+                    }
+                    
+                }.foregroundColor(.black)
+                    .padding(.all)
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 340, height: 65)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+                 TextField("StartinPrice $ *", text: $StartinPrice)
                  .foregroundColor(.black)
                  .padding(.all)
-                 .multilineTextAlignment(.leading)
                  .frame(width: 340, height: 65)
                  .background(Color.white)
                  .cornerRadius(10)
-                 */
+                 
+             
+                
+                
+                Button {
+                    Spacer()
+                } label: {
+                    Text("Join Now!")
+                        .multilineTextAlignment(.center)
+                    
+                        .frame(width: 310, height: 30)
+                    
+                        .padding()
+                        
+                        .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
+                        .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
+                     
+                        .background(Color(red: 0.182, green: 0.256, blue: 0.311))
+                        
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .cornerRadius(10)
+                }.shadow(color: .gray.opacity(0.7), radius: 8)
+                
                 
             }
         }.sheet(isPresented: $showImagePicker){

@@ -12,7 +12,7 @@ struct photographers: View {
         
         ZStack{
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
-            VStack{
+            VStack(alignment: .center){
                 
            
                     

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2401A928BD444B006AC8D0 /* Fourht.swift */; };
+		EC98694E28BFDEA1004145F3 /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98694D28BFDEA1004145F3 /* PersonRow.swift */; };
+		EC98695028BFDF5F004145F3 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98694F28BFDF5F004145F3 /* PersonModel.swift */; };
+		EC98695228BFE6E2004145F3 /* PersonsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98695128BFE6E2004145F3 /* PersonsList.swift */; };
 		ECBD4F1828BE4A7F00A64EAD /* RowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */; };
 		ECBD4F1A28BEB25B00A64EAD /* Designers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1928BEB25B00A64EAD /* Designers.swift */; };
 		ECBD4F1C28BEB57F00A64EAD /* photographers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1B28BEB57F00A64EAD /* photographers.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		EC2401A928BD444B006AC8D0 /* Fourht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourht.swift; sourceTree = "<group>"; };
+		EC98694D28BFDEA1004145F3 /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		EC98694F28BFDF5F004145F3 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		EC98695128BFE6E2004145F3 /* PersonsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsList.swift; sourceTree = "<group>"; };
 		ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowModel.swift; sourceTree = "<group>"; };
 		ECBD4F1928BEB25B00A64EAD /* Designers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designers.swift; sourceTree = "<group>"; };
 		ECBD4F1B28BEB57F00A64EAD /* photographers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photographers.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				ECBD4F2128BECBC300A64EAD /* JoinPage.swift */,
 				ECBD4F2728BF027D00A64EAD /* ImagePicker.swift */,
 				ECBD4F1928BEB25B00A64EAD /* Designers.swift */,
+				EC98694D28BFDEA1004145F3 /* PersonRow.swift */,
+				EC98695128BFE6E2004145F3 /* PersonsList.swift */,
+				EC98694F28BFDF5F004145F3 /* PersonModel.swift */,
 				ECBD4F1B28BEB57F00A64EAD /* photographers.swift */,
 				ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */,
 				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
@@ -178,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC98695028BFDF5F004145F3 /* PersonModel.swift in Sources */,
 				ECBD4F2228BECBC300A64EAD /* JoinPage.swift in Sources */,
+				EC98694E28BFDEA1004145F3 /* PersonRow.swift in Sources */,
 				EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */,
 				ECC7C23A28BA2D6200533606 /* ContentView.swift in Sources */,
 				ECBD4F1A28BEB25B00A64EAD /* Designers.swift in Sources */,
@@ -188,6 +199,7 @@
 				ECBD4F2828BF027D00A64EAD /* ImagePicker.swift in Sources */,
 				ECC7C23828BA2D6200533606 /* FinalProjectApp.swift in Sources */,
 				ECDC421928BD17430026FBCD /* Sec.swift in Sources */,
+				EC98695228BFE6E2004145F3 /* PersonsList.swift in Sources */,
 				ECBD4F2028BEC7D800A64EAD /* TabHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

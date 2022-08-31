@@ -19,7 +19,8 @@ struct TabHome: View {
                     Text("Join") }
                 .tag(1)
             
-Fourht()
+            
+            Fourht()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home") }
