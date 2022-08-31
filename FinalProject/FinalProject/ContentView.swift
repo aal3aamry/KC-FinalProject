@@ -36,13 +36,16 @@ Spacer()
                     .frame(width: 380, height: 80)
                 
                 Spacer()
+                
                 HStack{
+                    Spacer()
                     Button {
                    
                     } label: {
                         HStack{
                             Spacer()
                             Text("Register")
+                            
                                 .multilineTextAlignment(.center)
                             
                                 .frame(width: 140, height: 30)
@@ -88,6 +91,7 @@ Spacer()
                     
                     
                 }
+                
                 Spacer()
             }
             
@@ -163,3 +167,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+ 
