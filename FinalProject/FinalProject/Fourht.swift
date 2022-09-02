@@ -21,26 +21,6 @@ struct Fourht: View {
                     
                     
                     
-                    
-                    
-      
-                
-              
-            HStack{
-                Spacer()
-                
-                Button {
-                    Spacer()
-                } label: {
-                    Image("cart")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 100)
-                }
-
-                
-            }
-            
                 HStack{
                     Button {
                         Spacer()
@@ -94,8 +74,11 @@ struct Fourht: View {
                 }
                 .frame(width: 415, height: 50)
                 .background((Color(red: 0.953, green: 0.953, blue: 0.953)))
+                    
+      
                 
-                
+              
+           
                 Spacer()
                 
                 

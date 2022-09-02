@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var test = ""
+
+    @State var sheetPresented = false
+    
+    @State var sheetPresented1 = false
     var body: some View {
         ZStack{
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
@@ -18,7 +21,7 @@ struct ContentView: View {
             Image("bg1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 380, height: 380)
+                .frame(width: 360, height: 360)
                 .cornerRadius(20)
                 
            Spacer()
@@ -40,10 +43,11 @@ Spacer()
                 HStack{
                     Spacer()
                     Button {
-                   
+                        sheetPresented1 = true
+
                     } label: {
                         HStack{
-                            Spacer()
+              
                             Text("Register")
                             
                                 .multilineTextAlignment(.center)
@@ -62,13 +66,17 @@ Spacer()
 
                             
                         }
+                    }.sheet(isPresented: $sheetPresented1){
+                        Thi()
                     }
                     
+                    Spacer()
                     Button {
-                        test = "1"
+                        sheetPresented = true
+
                     } label: {
                         HStack{
-                            Spacer()
+                        
                             Text("Sign In")
                                 .multilineTextAlignment(.center)
                             
@@ -86,10 +94,14 @@ Spacer()
 
                             
                         }
-                    }.padding()
+                    } .sheet(isPresented: $sheetPresented){
+                        Sec()
+                    }
+                        //.sheet(isPresented: $sheetPresented) {
+                        //    CartList(estPrice: 0.0)
 
                     
-                    
+                    Spacer()
                 }
                 
                 Spacer()

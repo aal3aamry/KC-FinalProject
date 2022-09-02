@@ -20,14 +20,14 @@ struct TabHome: View {
                 .tag(1)
             
             
-            Fourht()
+            PersonsList()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home") }
                 .tag(2)
             
             
-            Text("Tab Content 3")
+        ProfilePage()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
 
@@ -36,6 +36,15 @@ struct TabHome: View {
             
             
             
+            CartList(estPrice: 0.0)
+                .tabItem {
+                    Image(systemName: "cart")
+                        
+                    Text("Cart") }
+                .tag(4)
+            
+            
+
         }
 
     }
@@ -44,5 +53,6 @@ struct TabHome: View {
 struct TabHome_Previews: PreviewProvider {
     static var previews: some View {
         TabHome()
+            .environmentObject(CartEnv())
     }
 }

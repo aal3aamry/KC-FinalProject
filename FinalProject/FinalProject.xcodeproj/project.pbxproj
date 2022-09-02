@@ -8,9 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2401A928BD444B006AC8D0 /* Fourht.swift */; };
+		EC55AA7128C243F00036B3BB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7028C243F00036B3BB /* ProfilePage.swift */; };
+		EC55AA7328C266700036B3BB /* ProfilePage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7228C266700036B3BB /* ProfilePage2.swift */; };
+		EC55AA7528C277F60036B3BB /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7428C277F60036B3BB /* PaymentsView.swift */; };
+		EC55AA7728C278090036B3BB /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7628C278090036B3BB /* SupportView.swift */; };
+		EC55AA7928C278490036B3BB /* SuggestedPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */; };
 		EC98694E28BFDEA1004145F3 /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98694D28BFDEA1004145F3 /* PersonRow.swift */; };
 		EC98695028BFDF5F004145F3 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98694F28BFDF5F004145F3 /* PersonModel.swift */; };
 		EC98695228BFE6E2004145F3 /* PersonsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98695128BFE6E2004145F3 /* PersonsList.swift */; };
+		ECA820B528C095E000F52AFE /* CartEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820B428C095DF00F52AFE /* CartEnv.swift */; };
+		ECA820B728C097C900F52AFE /* CartList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820B628C097C900F52AFE /* CartList.swift */; };
+		ECA820B928C0E44800F52AFE /* PersonScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820B828C0E44800F52AFE /* PersonScroll.swift */; };
+		ECA820BB28C0EB6D00F52AFE /* PersonRowPH.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820BA28C0EB6D00F52AFE /* PersonRowPH.swift */; };
+		ECA820BD28C0EBD000F52AFE /* PhotographerPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820BC28C0EBD000F52AFE /* PhotographerPersonModel.swift */; };
+		ECA820BF28C0F56E00F52AFE /* PHRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820BE28C0F56E00F52AFE /* PHRow.swift */; };
+		ECA820C128C0FB7E00F52AFE /* DevList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820C028C0FB7E00F52AFE /* DevList.swift */; };
+		ECA820C328C10ACE00F52AFE /* PhotographerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820C228C10ACE00F52AFE /* PhotographerModel.swift */; };
+		ECA820C528C10AE300F52AFE /* PhotographerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820C428C10AE300F52AFE /* PhotographerRow.swift */; };
+		ECA820C728C11F2800F52AFE /* DesignerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820C628C11F2800F52AFE /* DesignerModel.swift */; };
+		ECA820C928C120CD00F52AFE /* DesignerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820C828C120CD00F52AFE /* DesignerRow.swift */; };
+		ECA820CB28C123CC00F52AFE /* DesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA820CA28C123CC00F52AFE /* DesList.swift */; };
 		ECBD4F1828BE4A7F00A64EAD /* RowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */; };
 		ECBD4F1A28BEB25B00A64EAD /* Designers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1928BEB25B00A64EAD /* Designers.swift */; };
 		ECBD4F1C28BEB57F00A64EAD /* photographers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD4F1B28BEB57F00A64EAD /* photographers.swift */; };
@@ -30,9 +47,26 @@
 
 /* Begin PBXFileReference section */
 		EC2401A928BD444B006AC8D0 /* Fourht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourht.swift; sourceTree = "<group>"; };
+		EC55AA7028C243F00036B3BB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		EC55AA7228C266700036B3BB /* ProfilePage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage2.swift; sourceTree = "<group>"; };
+		EC55AA7428C277F60036B3BB /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		EC55AA7628C278090036B3BB /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedPlacesView.swift; sourceTree = "<group>"; };
 		EC98694D28BFDEA1004145F3 /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
 		EC98694F28BFDF5F004145F3 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		EC98695128BFE6E2004145F3 /* PersonsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsList.swift; sourceTree = "<group>"; };
+		ECA820B428C095DF00F52AFE /* CartEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartEnv.swift; sourceTree = "<group>"; };
+		ECA820B628C097C900F52AFE /* CartList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartList.swift; sourceTree = "<group>"; };
+		ECA820B828C0E44800F52AFE /* PersonScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonScroll.swift; sourceTree = "<group>"; };
+		ECA820BA28C0EB6D00F52AFE /* PersonRowPH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowPH.swift; sourceTree = "<group>"; };
+		ECA820BC28C0EBD000F52AFE /* PhotographerPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographerPersonModel.swift; sourceTree = "<group>"; };
+		ECA820BE28C0F56E00F52AFE /* PHRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHRow.swift; sourceTree = "<group>"; };
+		ECA820C028C0FB7E00F52AFE /* DevList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevList.swift; sourceTree = "<group>"; };
+		ECA820C228C10ACE00F52AFE /* PhotographerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographerModel.swift; sourceTree = "<group>"; };
+		ECA820C428C10AE300F52AFE /* PhotographerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographerRow.swift; sourceTree = "<group>"; };
+		ECA820C628C11F2800F52AFE /* DesignerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerModel.swift; sourceTree = "<group>"; };
+		ECA820C828C120CD00F52AFE /* DesignerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerRow.swift; sourceTree = "<group>"; };
+		ECA820CA28C123CC00F52AFE /* DesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesList.swift; sourceTree = "<group>"; };
 		ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowModel.swift; sourceTree = "<group>"; };
 		ECBD4F1928BEB25B00A64EAD /* Designers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designers.swift; sourceTree = "<group>"; };
 		ECBD4F1B28BEB57F00A64EAD /* photographers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photographers.swift; sourceTree = "<group>"; };
@@ -93,10 +127,27 @@
 				ECBD4F2728BF027D00A64EAD /* ImagePicker.swift */,
 				ECBD4F1928BEB25B00A64EAD /* Designers.swift */,
 				EC98694D28BFDEA1004145F3 /* PersonRow.swift */,
+				ECA820B428C095DF00F52AFE /* CartEnv.swift */,
 				EC98695128BFE6E2004145F3 /* PersonsList.swift */,
+				ECA820B828C0E44800F52AFE /* PersonScroll.swift */,
+				ECA820B628C097C900F52AFE /* CartList.swift */,
 				EC98694F28BFDF5F004145F3 /* PersonModel.swift */,
+				ECA820BC28C0EBD000F52AFE /* PhotographerPersonModel.swift */,
+				ECA820BA28C0EB6D00F52AFE /* PersonRowPH.swift */,
+				ECA820BE28C0F56E00F52AFE /* PHRow.swift */,
 				ECBD4F1B28BEB57F00A64EAD /* photographers.swift */,
 				ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */,
+				ECA820C028C0FB7E00F52AFE /* DevList.swift */,
+				ECA820C228C10ACE00F52AFE /* PhotographerModel.swift */,
+				ECA820C428C10AE300F52AFE /* PhotographerRow.swift */,
+				ECA820C628C11F2800F52AFE /* DesignerModel.swift */,
+				ECA820C828C120CD00F52AFE /* DesignerRow.swift */,
+				ECA820CA28C123CC00F52AFE /* DesList.swift */,
+				EC55AA7028C243F00036B3BB /* ProfilePage.swift */,
+				EC55AA7228C266700036B3BB /* ProfilePage2.swift */,
+				EC55AA7428C277F60036B3BB /* PaymentsView.swift */,
+				EC55AA7628C278090036B3BB /* SupportView.swift */,
+				EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */,
 				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
 				ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */,
 				ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */,
@@ -187,20 +238,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC55AA7728C278090036B3BB /* SupportView.swift in Sources */,
+				EC55AA7128C243F00036B3BB /* ProfilePage.swift in Sources */,
+				ECA820C728C11F2800F52AFE /* DesignerModel.swift in Sources */,
+				ECA820C928C120CD00F52AFE /* DesignerRow.swift in Sources */,
 				EC98695028BFDF5F004145F3 /* PersonModel.swift in Sources */,
+				ECA820B528C095E000F52AFE /* CartEnv.swift in Sources */,
+				ECA820BF28C0F56E00F52AFE /* PHRow.swift in Sources */,
 				ECBD4F2228BECBC300A64EAD /* JoinPage.swift in Sources */,
+				ECA820BB28C0EB6D00F52AFE /* PersonRowPH.swift in Sources */,
 				EC98694E28BFDEA1004145F3 /* PersonRow.swift in Sources */,
 				EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */,
 				ECC7C23A28BA2D6200533606 /* ContentView.swift in Sources */,
 				ECBD4F1A28BEB25B00A64EAD /* Designers.swift in Sources */,
+				ECA820C528C10AE300F52AFE /* PhotographerRow.swift in Sources */,
+				EC55AA7328C266700036B3BB /* ProfilePage2.swift in Sources */,
 				ECBD4F1828BE4A7F00A64EAD /* RowModel.swift in Sources */,
+				ECA820C128C0FB7E00F52AFE /* DevList.swift in Sources */,
 				ECBD4F1C28BEB57F00A64EAD /* photographers.swift in Sources */,
 				ECDC421D28BD21940026FBCD /* Thi.swift in Sources */,
 				ECBD4F2828BF027D00A64EAD /* ImagePicker.swift in Sources */,
 				ECC7C23828BA2D6200533606 /* FinalProjectApp.swift in Sources */,
+				ECA820CB28C123CC00F52AFE /* DesList.swift in Sources */,
 				ECDC421928BD17430026FBCD /* Sec.swift in Sources */,
 				EC98695228BFE6E2004145F3 /* PersonsList.swift in Sources */,
+				ECA820B928C0E44800F52AFE /* PersonScroll.swift in Sources */,
+				EC55AA7928C278490036B3BB /* SuggestedPlacesView.swift in Sources */,
 				ECBD4F2028BEC7D800A64EAD /* TabHome.swift in Sources */,
+				ECA820B728C097C900F52AFE /* CartList.swift in Sources */,
+				EC55AA7528C277F60036B3BB /* PaymentsView.swift in Sources */,
+				ECA820C328C10ACE00F52AFE /* PhotographerModel.swift in Sources */,
+				ECA820BD28C0EBD000F52AFE /* PhotographerPersonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +403,8 @@
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property! ";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to verify your identity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +437,8 @@
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property! ";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to verify your identity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -11,7 +11,8 @@ import SwiftUI
 struct FinalProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            TabHome()
+            ContentView()
+                .environmentObject(CartEnv())
         }
     }
 }

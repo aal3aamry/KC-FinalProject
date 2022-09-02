@@ -1,23 +1,21 @@
 //
-//  PersonRow.swift
+//  PhotographerRow.swift
 //  FinalProject
 //
-//  Created by عبدالرحمن العامري on 31/08/2022.
+//  Created by عبدالرحمن العامري on 01/09/2022.
 //
 
 import SwiftUI
 
-struct PersonRow: View {
-    
+struct PhotographerRow: View {
     @EnvironmentObject var cartEnv: CartEnv
-    var Person: Person
+    var Photographer: Photographer
     var body: some View {
-        
-        
-  
         VStack(alignment: .center){
+            
+            
             HStack(spacing: -10){
-            Image(Person.image)
+                Image(Photographer.image)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 70, height: 70)
@@ -26,12 +24,12 @@ struct PersonRow: View {
               
             VStack{
                 
-                Text(Person.name)
+                Text(Photographer.name)
                 .frame(width: 170, height: 20)
                 .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
             
                 
-                Text("From \(Person.price, specifier: "%.2f") KD")
+                Text("From \(Photographer.price, specifier: "%.2f") KD")
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
@@ -39,7 +37,7 @@ struct PersonRow: View {
             }
             
             HStack{
-                Image(Person.app)
+                Image(Photographer.app)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 30)
@@ -49,7 +47,7 @@ struct PersonRow: View {
           
             
             Button {
-                cartEnv.addPerson(Person: Person)
+                cartEnv.addPhotographer(Photographer: Photographer)
             } label: {
                 Image(systemName: "plus.circle")
                     .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
@@ -73,11 +71,13 @@ struct PersonRow: View {
      //   }
 }
 }
+    
 
 
-struct PersonRow_Previews: PreviewProvider {
+struct PhotographerRow_Previews: PreviewProvider {
     static var previews: some View {
-        PersonRow(Person: Persons [0])
+        PhotographerRow(Photographer: Photographers [0])
             .environmentObject(CartEnv())
+
     }
 }

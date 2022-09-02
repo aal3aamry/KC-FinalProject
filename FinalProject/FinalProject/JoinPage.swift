@@ -138,7 +138,7 @@ struct JoinPage: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 
-                 TextField("StartinPrice $ *", text: $StartinPrice)
+                 TextField("Starting Price KD *", text: $StartinPrice)
                  .foregroundColor(.black)
                  .padding(.all)
                  .frame(width: 340, height: 65)

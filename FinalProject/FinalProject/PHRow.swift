@@ -1,20 +1,16 @@
 //
-//  PersonRow.swift
+//  PHRow.swift
 //  FinalProject
 //
-//  Created by عبدالرحمن العامري on 31/08/2022.
+//  Created by عبدالرحمن العامري on 01/09/2022.
 //
 
 import SwiftUI
 
-struct PersonRow: View {
-    
+struct PHRow: View {
     @EnvironmentObject var cartEnv: CartEnv
     var Person: Person
     var body: some View {
-        
-        
-  
         VStack(alignment: .center){
             HStack(spacing: -10){
             Image(Person.image)
@@ -31,7 +27,7 @@ struct PersonRow: View {
                 .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
             
                 
-                Text("From \(Person.price, specifier: "%.2f") KD")
+                Text("\(Person.price, specifier: "%.2f") KD")
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
@@ -63,21 +59,14 @@ struct PersonRow: View {
         .background(Color(red: 0.894, green: 0.894, blue: 0.894))
             
         .cornerRadius(10)
-   
-        
     }
-        
-        
-        //func PriceStr() -> String{
-           // String(format: "%.2f KD", Person.price)
-     //   }
 }
 }
-
-
-struct PersonRow_Previews: PreviewProvider {
+struct PHRow_Previews: PreviewProvider {
     static var previews: some View {
-        PersonRow(Person: Persons [0])
+        PHRow(Person: Persons [0])
             .environmentObject(CartEnv())
+
     }
 }
+

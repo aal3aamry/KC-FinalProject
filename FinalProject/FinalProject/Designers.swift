@@ -4,7 +4,7 @@
 //
 //  Created by عبدالرحمن العامري on 31/08/2022.
 //
-
+/*
 import SwiftUI
 
 struct Designers: View {
@@ -16,42 +16,16 @@ struct Designers: View {
                 
            
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-      
-                
-              
-            HStack{
-                Spacer()
-                
-                Button {
-                    Spacer()
-                } label: {
-                    Image("cart")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 100)
-                }
-
-                
-            }
-            
                 HStack{
                     Button {
                         Spacer()
                     } label: {
                         Text("Developers")
                             .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
+                           
+                        
                             .foregroundColor(Color(red: 0.51, green: 0.509, blue: 0.527))
-                        
-                        
-                            .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
+                   
                             .multilineTextAlignment(.center)
                         
                             .padding()
@@ -65,10 +39,10 @@ struct Designers: View {
                     } label: {
                         Text("Designers")
                             .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
-                           
-                        
                             .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
-                            
+                         
+                        
+                      
                             .multilineTextAlignment(.center)
                             .padding()
                     }
@@ -95,12 +69,17 @@ struct Designers: View {
                 }
                 .frame(width: 415, height: 50)
                 .background((Color(red: 0.953, green: 0.953, blue: 0.953)))
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+      
                 
-                
-                Spacer()
-                
-                
-               
+              
+          Spacer()
                 
                 
                 
@@ -338,3 +317,4 @@ struct Designers_Previews: PreviewProvider {
         Designers()
     }
 }
+*/

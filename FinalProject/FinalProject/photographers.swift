@@ -14,46 +14,16 @@ struct photographers: View {
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
             VStack(alignment: .center){
                 
-           
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-      
-                
-              
-            HStack{
-                Spacer()
-                
-                Button {
-                    Spacer()
-                } label: {
-                    Image("cart")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 100)
-                }
-
-                
-            }
-            
-                
                 HStack{
-                    
                     Button {
                         Spacer()
                     } label: {
                         Text("Developers")
                             .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
+                           
+                        
                             .foregroundColor(Color(red: 0.51, green: 0.509, blue: 0.527))
-                        
-                        
-                            .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
+                   
                             .multilineTextAlignment(.center)
                         
                             .padding()
@@ -67,10 +37,12 @@ struct photographers: View {
                     } label: {
                         Text("Designers")
                             .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
-                           
-                        
                             .foregroundColor(Color(red: 0.51, green: 0.509, blue: 0.527))
-                            
+                        
+                
+                         
+                        
+                      
                             .multilineTextAlignment(.center)
                             .padding()
                     }
@@ -85,9 +57,8 @@ struct photographers: View {
                             .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
                            
                         
-                            .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
                         
-                            
+                            .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
                             .multilineTextAlignment(.center)
                             .padding()
                     }
@@ -98,8 +69,76 @@ struct photographers: View {
                 }
                 .frame(width: 415, height: 50)
                 .background((Color(red: 0.953, green: 0.953, blue: 0.953)))
+           
+                    
+                    
+                List(Photographers){ Photographer in
+                   PhotographerRow(Photographer: Photographer)
+                    
+                  
+                 }        .background((Color(red: 0.894, green: 0.894, blue: 0.894)))
+                    
+                    
+               /*
+                HStack{
+                    Button {
+                        Spacer()
+                    } label: {
+                        Text("Developers")
+                            .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
+                           
+                        
+                        
+                            .foregroundColor(Color(red: 0.51, green: 0.509, blue: 0.527))
+                            .multilineTextAlignment(.center)
+                        
+                            .padding()
+                    }
+
+                    
+                    Divider()
+                    
+                    Button {
+                        Spacer()
+                    } label: {
+                        Text("Designers")
+                            .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
+                           
+                            .foregroundColor(Color(red: 0.51, green: 0.509, blue: 0.527))
+                        
+                           
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+
+                    
+                    Divider()
+
+                    Button {
+                        Spacer()
+                    } label: {
+                        Text("Photographers")
+                            .font(Font.custom("NeufileGrotesk-SemiBold",size:15))
+                           
+                            .foregroundColor(Color(red: -0.195, green: 0.469, blue: 1.036))
+                        
+                           
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+
+                    
+                    
+
+                }
+                .frame(width: 415, height: 50)
+                .background((Color(red: 0.953, green: 0.953, blue: 0.953)))
+                    
+                    
+      
                 
-                
+              
+           
                 Spacer()
                 
                 
@@ -303,7 +342,7 @@ struct photographers: View {
             }
             
             
-            
+            */
           
             
             
@@ -325,7 +364,7 @@ struct photographers: View {
             
             
             
-            
+            }
             
             
             
@@ -341,3 +380,5 @@ struct photographers_Previews: PreviewProvider {
         photographers()
     }
 }
+
+
