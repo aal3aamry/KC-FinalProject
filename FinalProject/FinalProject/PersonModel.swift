@@ -28,9 +28,11 @@ let Persons = [
     Person(name: "Zahrah", image: "zahrah", price: 210.0, app: "php"),
 
     
-    Person(name: "Shaimaa", image: "shaimaa", price: 217.0, app: "objc")
-
+    Person(name: "Shaimaa", image: "shaimaa", price: 217.0, app: "objc"),
     
+    Person(name: "Farah", image: "farah", price: 234.0, app: "python"),
+
+   // Person(name: "Fajer", image: "fajer", price: 253,0, app: "c#")
     
 ]
 

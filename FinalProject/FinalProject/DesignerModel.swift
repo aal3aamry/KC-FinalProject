@@ -22,9 +22,10 @@ let Designers = [
 
     Designer(name: "Osama", image: "osama", price: 277.0, app: "xd"),
     Designer(name: "Mohammed", image: "mohammed", price: 202.0, app: "blender"),
-    Designer(name: "Ola", image: "ola", price: 254.0, app: "ps")
+    Designer(name: "Ola", image: "ola", price: 254.0, app: "ps"),
+    Designer(name: "Fajer", image: "fajer", price: 204.0, app: "ai")
+  
 
-    
     
 ]
 

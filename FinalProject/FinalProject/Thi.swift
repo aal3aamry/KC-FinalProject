@@ -15,6 +15,11 @@ struct Thi: View {
     @State var UserName = ""
     @State var BusinessEmail = ""
     @State var Password = ""
+    
+    
+    
+    @State var fullscreenPresented = false
+    
     var body: some View {
         ZStack{
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
@@ -79,9 +84,14 @@ struct Thi: View {
             }
             Spacer()
             
-            Button {
-                Spacer()
-            } label: {
+            
+            
+            
+            
+            Button( action:{ fullscreenPresented.toggle()
+            })
+            {
+            
                 Text("Start My Free Trail")
                     .multilineTextAlignment(.center)
                 
@@ -97,6 +107,11 @@ struct Thi: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .cornerRadius(10)
             }
+           
+        
+            
+            
+            
             
             
             Text("*No Credit Card Required")
@@ -117,7 +132,8 @@ struct Thi: View {
             
             
             
-        }
+        }.fullScreenCover(isPresented: $fullscreenPresented, content:{ TabHome()
+        })
         }
     }
 }
