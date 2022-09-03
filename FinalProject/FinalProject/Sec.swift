@@ -12,6 +12,7 @@ struct Sec: View {
     @State var Password = ""
     @State private var isUnlocked = false
     @State var fullscreenPresented = false
+    @State var fullscreenPresented1 = false
     var body: some View {
         
         ZStack{
@@ -21,16 +22,18 @@ struct Sec: View {
             
            
                 
-                
+            NavigationView{
            
                 VStack{
                     
                     if      isUnlocked {
                         
+                        
+                        
+                        
+                    }
                     
-                        
-                        
-                    }else{
+                    else{
                         
                      
                         
@@ -129,15 +132,24 @@ struct Sec: View {
                         //Button("test"){
                 //    perform: authenticate()
                   //  }
-                    
-                        Image(systemName: "faceid")
-                            .font(.system(size: 80))
-                            .foregroundColor((Color(red: 0.182, green: 0.256, blue: 0.311)))
-                    
+                        
+                        VStack{
+                        Button( action:{ fullscreenPresented1.toggle()
+                        })
+                        {
+                            Image(systemName: "faceid")
+                                .font(.system(size: 80))
+                                .foregroundColor((Color(red: 0.182, green: 0.256, blue: 0.311)))
+                        
+                        }
+                        
+                        }.onAppear(perform: authenticate)
+
+                       
                 
                    
                     
-                        .onAppear(perform: authenticate)
+                        
                     
                         Spacer()
                     
@@ -185,16 +197,24 @@ struct Sec: View {
                 
                 
                 
-                Text("Locked")
-                }.frame(width: 400)
+     
+                }.frame(width: 500)
                 
                 .background((Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea())
             
-                .fullScreenCover(isPresented: $fullscreenPresented, content:{ TabHome()
-    
                 
-        }
+                
+                
+                
+                .fullScreenCover(isPresented: $fullscreenPresented, content:{ TabHome()
+                    
+                    .fullScreenCover(isPresented: $fullscreenPresented1, content:{ TabHome()
+                        })
+                }
+                                 
+                
         )}
+        }
         }
             
     func authenticate(){

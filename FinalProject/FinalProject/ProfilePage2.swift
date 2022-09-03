@@ -19,7 +19,6 @@ struct ProfilePage2: View {
             
             
             
-            NavigationView{
             
             VStack{
                 Spacer()
@@ -28,9 +27,12 @@ struct ProfilePage2: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 380, height: 120)
                     .foregroundColor(.gray)
+         
                 Spacer()
                 
+                NavigationLink(destination: PaymentsView()){
                 HStack{
+                 
                     
                     Image(systemName: "creditcard")
                         .multilineTextAlignment(.center)
@@ -47,7 +49,7 @@ struct ProfilePage2: View {
                     Text("Payments")
                         .multilineTextAlignment(.center)
                     
-                
+                        
                     
                 
                         
@@ -58,7 +60,10 @@ struct ProfilePage2: View {
                     
                     
                     
+                }.navigationTitle(Text("Payments"))
                 }
+                
+                
                 Divider()
                 HStack{
                     Image(systemName: "info.circle")
@@ -113,13 +118,13 @@ struct ProfilePage2: View {
                 }
                 
                 Spacer()
-            }.frame(height: 720)
+            }.frame(height: 1000)
                 
                     .background( (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea())
                 
                     .navigationTitle(Text("Dashboard"))
                     .navigationBarTitleDisplayMode(.inline)
-            }
+            
             
             
             

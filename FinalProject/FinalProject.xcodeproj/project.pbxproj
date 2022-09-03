@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2401A928BD444B006AC8D0 /* Fourht.swift */; };
+		EC44129F28C345A9000872B5 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44129E28C345A9000872B5 /* FaceID.swift */; };
 		EC55AA7128C243F00036B3BB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7028C243F00036B3BB /* ProfilePage.swift */; };
 		EC55AA7328C266700036B3BB /* ProfilePage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7228C266700036B3BB /* ProfilePage2.swift */; };
 		EC55AA7528C277F60036B3BB /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7428C277F60036B3BB /* PaymentsView.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		EC2401A928BD444B006AC8D0 /* Fourht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourht.swift; sourceTree = "<group>"; };
+		EC44129E28C345A9000872B5 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
 		EC55AA7028C243F00036B3BB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		EC55AA7228C266700036B3BB /* ProfilePage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage2.swift; sourceTree = "<group>"; };
 		EC55AA7428C277F60036B3BB /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				ECC7C23928BA2D6200533606 /* ContentView.swift */,
 				ECDC421828BD17430026FBCD /* Sec.swift */,
 				ECDC421C28BD21940026FBCD /* Thi.swift */,
+				EC44129E28C345A9000872B5 /* FaceID.swift */,
 				ECBD4F1F28BEC7D800A64EAD /* TabHome.swift */,
 				EC2401A928BD444B006AC8D0 /* Fourht.swift */,
 				ECBD4F2128BECBC300A64EAD /* JoinPage.swift */,
@@ -241,6 +244,7 @@
 				EC55AA7728C278090036B3BB /* SupportView.swift in Sources */,
 				EC55AA7128C243F00036B3BB /* ProfilePage.swift in Sources */,
 				ECA820C728C11F2800F52AFE /* DesignerModel.swift in Sources */,
+				EC44129F28C345A9000872B5 /* FaceID.swift in Sources */,
 				ECA820C928C120CD00F52AFE /* DesignerRow.swift in Sources */,
 				EC98695028BFDF5F004145F3 /* PersonModel.swift in Sources */,
 				ECA820B528C095E000F52AFE /* CartEnv.swift in Sources */,

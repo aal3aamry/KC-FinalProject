@@ -131,7 +131,7 @@ struct ProfilePage: View {
                 .cornerRadius(10)
                 
             
-            Spacer()
+     
               
                     
                     
@@ -151,6 +151,7 @@ struct ProfilePage: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .cornerRadius(10)
                     }
+                Spacer()
                 }
             
                 /*

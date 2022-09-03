@@ -27,12 +27,15 @@ struct ContentView: View {
            Spacer()
                 Text("Gather Your Team Members At One Place!")
                 .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
+                .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .frame(width: 380, height: 80)
 Spacer()
                 Divider()
                 Spacer()
                 Text("Exploer The Best Freelancers Worldwide")
+                    .foregroundColor(.black)
+
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:20))
                     .multilineTextAlignment(.center)
 
