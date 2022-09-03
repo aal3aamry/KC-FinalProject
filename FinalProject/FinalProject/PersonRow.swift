@@ -60,7 +60,7 @@ struct PersonRow: View {
             }
         }         .padding()
         .frame(height: 120)
-        .background(Color(red: 0.894, green: 0.894, blue: 0.894))
+        .background((Color.white))
             
         .cornerRadius(10)
    

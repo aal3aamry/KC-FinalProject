@@ -4,7 +4,7 @@
 //
 //  Created by عبدالرحمن العامري on 29/08/2022.
 //
-
+import Swift
 import SwiftUI
 import LocalAuthentication
 struct Sec: View {

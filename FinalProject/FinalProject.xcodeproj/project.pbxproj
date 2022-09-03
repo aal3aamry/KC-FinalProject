@@ -120,8 +120,8 @@
 			children = (
 				ECDC421328BD04510026FBCD /* Info.plist */,
 				ECC7C23728BA2D6200533606 /* FinalProjectApp.swift */,
-				ECC7C23928BA2D6200533606 /* ContentView.swift */,
 				ECDC421828BD17430026FBCD /* Sec.swift */,
+				ECC7C23928BA2D6200533606 /* ContentView.swift */,
 				ECDC421C28BD21940026FBCD /* Thi.swift */,
 				EC44129E28C345A9000872B5 /* FaceID.swift */,
 				ECBD4F1F28BEC7D800A64EAD /* TabHome.swift */,

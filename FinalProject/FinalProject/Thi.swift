@@ -41,7 +41,7 @@ struct Thi: View {
                 .frame(width: 340, height: 65)
                 .background(Color.white)
                 .cornerRadius(10)
-            
+                
             TextField("Last Name *", text: $LastName)
                 .foregroundColor(.black)
                 .padding(.all)
@@ -86,7 +86,12 @@ struct Thi: View {
             
             
             
-            
+            Button {
+                
+            } label: {
+                
+            }
+
             
             Button( action:{ fullscreenPresented.toggle()
             })
