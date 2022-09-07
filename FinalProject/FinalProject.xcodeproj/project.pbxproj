@@ -53,8 +53,6 @@
 		ECDC421928BD17430026FBCD /* Sec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421828BD17430026FBCD /* Sec.swift */; };
 		ECDC421D28BD21940026FBCD /* Thi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421C28BD21940026FBCD /* Thi.swift */; };
 		ECDD775528C8B544002C9975 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECDD775428C8B544002C9975 /* GoogleService-Info.plist */; };
-		ECDD775828C8B69E002C9975 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECDD775728C8B69E002C9975 /* FirebaseAnalytics */; };
-		ECDD775A28C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */; };
 		ECE4CB8928C89E01003A65B6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +99,7 @@
 		ECC7C23B28BA2D6600533606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC7C23E28BA2D6600533606 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECDC421128BD04270026FBCD /* NeufileGrotesk_font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NeufileGrotesk_font; sourceTree = "<group>"; };
-		ECDC421328BD04510026FBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECDC421328BD04510026FBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeufileGrotesk-Medium.ttf"; sourceTree = "<group>"; };
 		ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeufileGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
 		ECDC421828BD17430026FBCD /* Sec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec.swift; sourceTree = "<group>"; };
@@ -115,14 +113,170 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDD775828C8B69E002C9975 /* FirebaseAnalytics in Frameworks */,
-				ECDD775A28C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC42FDC928C91A5B00832BAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC42FDCE28C91B9B00832BAD /* Lists */,
+				EC42FDD628C91E9100832BAD /* Main */,
+				EC42FDD428C91D2A00832BAD /* Maps */,
+				EC42FDD128C91CDC00832BAD /* Profile */,
+				EC42FDD028C91C9100832BAD /* Rows */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC42FDCA28C91A9600832BAD /* Not used */ = {
+			isa = PBXGroup;
+			children = (
+				ECDD775428C8B544002C9975 /* GoogleService-Info.plist */,
+				EC52851428C611DB00644DDA /* MapView.swift */,
+				EC52851A28C61CAE00644DDA /* Decoder.swift */,
+				EC52852828C7411600644DDA /* MyMapView.swift */,
+				EC52851628C6179100644DDA /* MeetingLocation.swift */,
+				EC52851828C619E200644DDA /* LocationModel.swift */,
+				EC52851E28C691FB00644DDA /* locations.json */,
+				EC52852628C73C9200644DDA /* LinkPreviews.swift */,
+				EC52852428C69F0A00644DDA /* location.json */,
+				EC2401A928BD444B006AC8D0 /* Fourht.swift */,
+				ECBD4F1928BEB25B00A64EAD /* Designers.swift */,
+				ECA820B828C0E44800F52AFE /* PersonScroll.swift */,
+				ECA820BC28C0EBD000F52AFE /* PhotographerPersonModel.swift */,
+				ECA820BA28C0EB6D00F52AFE /* PersonRowPH.swift */,
+				ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */,
+				EC42FDCB28C91ADF00832BAD /* Features */,
+			);
+			path = "Not used";
+			sourceTree = "<group>";
+		};
+		EC42FDCB28C91ADF00832BAD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD4F2728BF027D00A64EAD /* ImagePicker.swift */,
+				EC44129E28C345A9000872B5 /* FaceID.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EC42FDCD28C91B7D00832BAD /*  Environments */ = {
+			isa = PBXGroup;
+			children = (
+				ECA820B428C095DF00F52AFE /* CartEnv.swift */,
+			);
+			path = " Environments";
+			sourceTree = "<group>";
+		};
+		EC42FDCE28C91B9B00832BAD /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				ECA820C028C0FB7E00F52AFE /* DevList.swift */,
+				ECA820CA28C123CC00F52AFE /* DesList.swift */,
+				EC98695128BFE6E2004145F3 /* PersonsList.swift */,
+				ECA820B628C097C900F52AFE /* CartList.swift */,
+				ECBD4F1B28BEB57F00A64EAD /* photographers.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		EC42FDCF28C91C4800832BAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC98694F28BFDF5F004145F3 /* PersonModel.swift */,
+				ECA820C228C10ACE00F52AFE /* PhotographerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC42FDD028C91C9100832BAD /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				EC98694D28BFDEA1004145F3 /* PersonRow.swift */,
+				ECA820C428C10AE300F52AFE /* PhotographerRow.swift */,
+				ECA820C828C120CD00F52AFE /* DesignerRow.swift */,
+				ECA820BE28C0F56E00F52AFE /* PHRow.swift */,
+				ECA820C628C11F2800F52AFE /* DesignerModel.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		EC42FDD128C91CDC00832BAD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC55AA7028C243F00036B3BB /* ProfilePage.swift */,
+				EC55AA7228C266700036B3BB /* ProfilePage2.swift */,
+				EC42FDD228C91CF400832BAD /* Payments */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EC42FDD228C91CF400832BAD /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				EC55AA7428C277F60036B3BB /* PaymentsView.swift */,
+				EC42FDD328C91D1000832BAD /* Support */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		EC42FDD328C91D1000832BAD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EC55AA7628C278090036B3BB /* SupportView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EC42FDD428C91D2A00832BAD /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		EC42FDD528C91D6B00832BAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */,
+				ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */,
+				ECDC421128BD04270026FBCD /* NeufileGrotesk_font */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EC42FDD628C91E9100832BAD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ECC7C23928BA2D6200533606 /* ContentView.swift */,
+				ECDC421828BD17430026FBCD /* Sec.swift */,
+				ECDC421C28BD21940026FBCD /* Thi.swift */,
+				ECBD4F2128BECBC300A64EAD /* JoinPage.swift */,
+				ECBD4F1F28BEC7D800A64EAD /* TabHome.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EC42FDD728C91F0D00832BAD /* The Main */ = {
+			isa = PBXGroup;
+			children = (
+				ECC7C23728BA2D6200533606 /* FinalProjectApp.swift */,
+			);
+			path = "The Main";
+			sourceTree = "<group>";
+		};
+		EC42FDD928C91F3100832BAD /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
 		ECC7C22B28BA2D6200533606 = {
 			isa = PBXGroup;
 			children = (
@@ -143,52 +297,13 @@
 			isa = PBXGroup;
 			children = (
 				ECDC421328BD04510026FBCD /* Info.plist */,
-				ECDD775428C8B544002C9975 /* GoogleService-Info.plist */,
-				ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */,
-				ECC7C23728BA2D6200533606 /* FinalProjectApp.swift */,
-				ECDC421828BD17430026FBCD /* Sec.swift */,
-				ECC7C23928BA2D6200533606 /* ContentView.swift */,
-				ECDC421C28BD21940026FBCD /* Thi.swift */,
-				EC44129E28C345A9000872B5 /* FaceID.swift */,
-				ECBD4F1F28BEC7D800A64EAD /* TabHome.swift */,
-				EC2401A928BD444B006AC8D0 /* Fourht.swift */,
-				ECBD4F2128BECBC300A64EAD /* JoinPage.swift */,
-				ECBD4F2728BF027D00A64EAD /* ImagePicker.swift */,
-				ECBD4F1928BEB25B00A64EAD /* Designers.swift */,
-				EC98694D28BFDEA1004145F3 /* PersonRow.swift */,
-				ECA820B428C095DF00F52AFE /* CartEnv.swift */,
-				EC98695128BFE6E2004145F3 /* PersonsList.swift */,
-				ECA820B828C0E44800F52AFE /* PersonScroll.swift */,
-				ECA820B628C097C900F52AFE /* CartList.swift */,
-				EC98694F28BFDF5F004145F3 /* PersonModel.swift */,
-				ECA820BC28C0EBD000F52AFE /* PhotographerPersonModel.swift */,
-				ECA820BA28C0EB6D00F52AFE /* PersonRowPH.swift */,
-				ECA820BE28C0F56E00F52AFE /* PHRow.swift */,
-				ECBD4F1B28BEB57F00A64EAD /* photographers.swift */,
-				ECBD4F1728BE4A7F00A64EAD /* RowModel.swift */,
-				ECA820C028C0FB7E00F52AFE /* DevList.swift */,
-				ECA820C228C10ACE00F52AFE /* PhotographerModel.swift */,
-				ECA820C428C10AE300F52AFE /* PhotographerRow.swift */,
-				ECA820C628C11F2800F52AFE /* DesignerModel.swift */,
-				ECA820C828C120CD00F52AFE /* DesignerRow.swift */,
-				ECA820CA28C123CC00F52AFE /* DesList.swift */,
-				EC55AA7028C243F00036B3BB /* ProfilePage.swift */,
-				EC55AA7228C266700036B3BB /* ProfilePage2.swift */,
-				EC55AA7428C277F60036B3BB /* PaymentsView.swift */,
-				EC55AA7628C278090036B3BB /* SupportView.swift */,
-				EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */,
-				EC52851428C611DB00644DDA /* MapView.swift */,
-				EC52851A28C61CAE00644DDA /* Decoder.swift */,
-				EC52852828C7411600644DDA /* MyMapView.swift */,
-				EC52851628C6179100644DDA /* MeetingLocation.swift */,
-				EC52851828C619E200644DDA /* LocationModel.swift */,
-				EC52851E28C691FB00644DDA /* locations.json */,
-				EC52852628C73C9200644DDA /* LinkPreviews.swift */,
-				EC52852428C69F0A00644DDA /* location.json */,
-				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
-				ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */,
-				ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */,
-				ECDC421128BD04270026FBCD /* NeufileGrotesk_font */,
+				EC42FDD928C91F3100832BAD /* Launch Screen */,
+				EC42FDD728C91F0D00832BAD /* The Main */,
+				EC42FDC928C91A5B00832BAD /* Views */,
+				EC42FDCD28C91B7D00832BAD /*  Environments */,
+				EC42FDCF28C91C4800832BAD /* Model */,
+				EC42FDCA28C91A9600832BAD /* Not used */,
+				EC42FDD528C91D6B00832BAD /* Fonts */,
 				ECC7C23D28BA2D6600533606 /* Preview Content */,
 			);
 			path = FinalProject;
@@ -197,6 +312,7 @@
 		ECC7C23D28BA2D6600533606 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
 				ECC7C23E28BA2D6600533606 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -219,8 +335,6 @@
 			);
 			name = FinalProject;
 			packageProductDependencies = (
-				ECDD775728C8B69E002C9975 /* FirebaseAnalytics */,
-				ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */,
 			);
 			productName = FinalProject;
 			productReference = ECC7C23428BA2D6200533606 /* FinalProject.app */;
@@ -547,19 +661,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		ECDD775728C8B69E002C9975 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsOnDeviceConversion;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC7C22C28BA2D6200533606 /* Project object */;
 }

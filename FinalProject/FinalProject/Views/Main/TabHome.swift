@@ -24,6 +24,8 @@ struct TabHome: View {
         
                 .tabItem {
                     Image(systemName: "house.fill")
+                    
+                        
                     Text("Home") }
                 .tag(1)
             
@@ -31,6 +33,7 @@ struct TabHome: View {
       JoinPage()
                 .tabItem {
                     Image(systemName: "plus.circle")
+                    
                     Text("Join")
                     
                 }

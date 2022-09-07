@@ -16,7 +16,8 @@ struct Sec: View {
     
     @State var signInSuccess = false
     
-    
+    @State var isAlertPresented : Bool = false
+
     var body: some View {
         
         ZStack{
@@ -113,6 +114,16 @@ struct Sec: View {
                         Spacer()
                         
                         Button( action:{ fullscreenPresented.toggle()
+                            
+                            
+                            
+                            if UserName == ""{
+                                
+                                isAlertPresented.toggle()
+
+                                
+                                
+                            }
                         })
                         {
                             Text("Sign In")
@@ -129,6 +140,13 @@ struct Sec: View {
                             
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                                 .cornerRadius(10)
+                            
+                            
+                                .alert(isPresented: $isAlertPresented) {
+                                    Alert(title: Text("E404"), message: Text("Please Fill in the mandatory fields"), dismissButton: .default(Text(("Okay"))))
+                                    
+                        }
+                            
                         }
                         
                         

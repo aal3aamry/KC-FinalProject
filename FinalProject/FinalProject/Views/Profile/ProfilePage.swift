@@ -28,6 +28,11 @@ struct ProfilePage: View {
     
     
 @State var Password = ""
+    
+    
+    
+    @State var isAlertPresented : Bool = false
+
      
     var body: some View {
         NavigationView{
@@ -142,6 +147,8 @@ struct ProfilePage: View {
                     Spacer()
            
                 NavigationLink(destination: ProfilePage2(FirstName: $FirstName)){
+                    
+                
                     Text("Save & Continue")
                         .multilineTextAlignment(.center)
                     
@@ -156,6 +163,9 @@ struct ProfilePage: View {
                         
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .cornerRadius(10)
+                    
+                    
+                    
                     }.shadow(color: .gray.opacity(0.7), radius: 8)
                 Spacer()
                 }

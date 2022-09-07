@@ -4,7 +4,7 @@
 //
 //  Created by عبدالرحمن العامري on 29/08/2022.
 //
-
+/*
 import SwiftUI
 
 struct Fourht: View {
@@ -499,3 +499,4 @@ struct Fourht_Previews: PreviewProvider {
         Fourht()
     }
 }
+*/
