@@ -14,18 +14,31 @@ struct TabHome: View {
         
         TabView(selection: $tabSelection) {
             
-      JoinPage()
-                .tabItem {
-                    Image(systemName: "plus.circle")
-                    Text("Join") }
-                .tag(2)
+            
+            
+            
+            
             
             
             PersonsList()
+        
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home") }
                 .tag(1)
+            
+            
+      JoinPage()
+                .tabItem {
+                    Image(systemName: "plus.circle")
+                    Text("Join")
+                    
+                }
+                .tag(2)
+            
+            
+            
+     
             
             
         ProfilePage()
@@ -45,7 +58,6 @@ struct TabHome: View {
                 .tag(4)
             
             
-
         }
 
     }

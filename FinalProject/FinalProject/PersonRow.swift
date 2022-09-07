@@ -10,13 +10,17 @@ import SwiftUI
 struct PersonRow: View {
     
     @EnvironmentObject var cartEnv: CartEnv
+    
+    
+    
+    @State private var animate = false
     var Person: Person
     var body: some View {
         
         
   
         VStack(alignment: .center){
-            HStack(spacing: -10){
+            HStack(spacing: 0){
             Image(Person.image)
                 .resizable()
                 .scaledToFit()
@@ -64,8 +68,8 @@ struct PersonRow: View {
             
         .cornerRadius(10)
    
-        
-    }
+       
+        }
         
         
         //func PriceStr() -> String{

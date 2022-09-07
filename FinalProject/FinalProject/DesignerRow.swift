@@ -15,7 +15,7 @@ struct DesignerRow: View {
         VStack(alignment: .center){
             
             
-            HStack(spacing: -10){
+            HStack(spacing: 0){
                 Image(Designer.image)
                 .resizable()
                 .scaledToFit()

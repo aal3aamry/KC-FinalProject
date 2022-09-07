@@ -8,61 +8,51 @@
 import SwiftUI
 
 struct SupportView: View {
-    @State var nameOfCard = ""
-    @State var cardNumber = ""
-    @State var expiringDate = ""
-    @State var CVVandCVC = ""
-    
+  
+    @State private var animate = false
+
     
     var body: some View {
         ZStack{
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
-            
-            
-            
-            
             VStack{
                 Spacer()
-                Image("card")
+                Image("book")
                     .resizable()
                     .scaleEffect()
-                    .frame(width: 250, height: 250)
+                
+                    .padding(60)
+                
+                
+                    .frame(width: animate ? 500: 300, height: animate ? 500 : 300)
+                  
+                      .onTapGesture {
+                          withAnimation(.spring(response: 0.9, dampingFraction: 0.9, blendDuration: 0.9)){
+                              
+                              animate.toggle()
+                          }
+                          
+                     
+                      }
                 
                 Spacer()
                 
-                TextField("Name Of Card *", text: $nameOfCard)
-                .foregroundColor(.black)
-                .padding(.all)
-                .multilineTextAlignment(.leading)
-                .frame(width: 340, height: 65)
-                .background(Color.white)
-                .cornerRadius(10)
+                Link("Visit Our Website", destination: URL(string: "https://dolomite-harmless-factory.glitch.me")!)
+                    .multilineTextAlignment(.center)
                 
-                TextField("Card Number *", text: $cardNumber)
-                .foregroundColor(.black)
-                .padding(.all)
-                .multilineTextAlignment(.leading)
-                .frame(width: 340, height: 65)
-                .background(Color.white)
-                .cornerRadius(10)
+                    .frame(width: 310, height: 30)
                 
-                TextField("Expiring Date *", text: $expiringDate)
-                .foregroundColor(.black)
-                .padding(.all)
-                .multilineTextAlignment(.leading)
-                .frame(width: 340, height: 65)
-                .background(Color.white)
-                .cornerRadius(10)
+                    .padding()
+                    
+                    .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
+                    .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
+                 
+                    .background(Color(red: 0.182, green: 0.256, blue: 0.311))
+                    
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .cornerRadius(10)
                 
-                
-                TextField("CVV/CVC *", text: $CVVandCVC)
-                .foregroundColor(.black)
-                .padding(.all)
-                .multilineTextAlignment(.leading)
-                .frame(width: 340, height: 65)
-                .background(Color.white)
-                .cornerRadius(10)
-       Spacer()
+                    .padding(20)
             }
         }
     }

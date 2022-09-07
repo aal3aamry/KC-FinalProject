@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     @State var sheetPresented = false
     
     @State var sheetPresented1 = false
@@ -18,27 +18,27 @@ struct ContentView: View {
             
             VStack{
                 
-            Image("bg1")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 360, height: 360)
-                .cornerRadius(20)
+                Image("bg1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 360, height: 360)
+                    .cornerRadius(20)
                 
-           Spacer()
+                Spacer()
                 Text("Gather Your Team Members At One Place!")
-                .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
-                .foregroundColor(.black)
-                .multilineTextAlignment(.center)
-                .frame(width: 380, height: 80)
-Spacer()
+                    .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 380, height: 80)
+                Spacer()
                 Divider()
                 Spacer()
                 Text("Exploer The Best Freelancers Worldwide")
                     .foregroundColor(.black)
-
+                
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:20))
                     .multilineTextAlignment(.center)
-
+                
                     .frame(width: 380, height: 80)
                 
                 Spacer()
@@ -47,10 +47,10 @@ Spacer()
                     Spacer()
                     Button {
                         sheetPresented1 = true
-
+                        
                     } label: {
                         HStack{
-              
+                            
                             Text("Register")
                             
                                 .multilineTextAlignment(.center)
@@ -58,15 +58,15 @@ Spacer()
                                 .frame(width: 140, height: 30)
                             
                                 .padding()
-                                
+                            
                                 .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
                                 .foregroundColor(Color(red: 0.166, green: 0.256, blue: 0.316))
-                             
+                            
                                 .background(Color(red: 1.0, green: 1.0, blue: 1.0))
-                                
+                            
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                              
-
+                            
+                            
                             
                         }
                     }.sheet(isPresented: $sheetPresented1){
@@ -76,33 +76,35 @@ Spacer()
                     Spacer()
                     Button {
                         sheetPresented = true
-
+                        
                     } label: {
                         HStack{
-                        
+                            
                             Text("Sign In")
                                 .multilineTextAlignment(.center)
                             
                                 .frame(width: 140, height: 30)
                             
                                 .padding()
-                                
+                            
                                 .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
                                 .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
-                             
+                            
                                 .background(Color(red: 0.182, green: 0.256, blue: 0.311))
-                                
+                            
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                              
-
+                            
+                            
                             
                         }
-                    } .sheet(isPresented: $sheetPresented){
+                    }
+                    
+                    .sheet(isPresented: $sheetPresented){
                         Sec()
                     }
-                        //.sheet(isPresented: $sheetPresented) {
-                        //    CartList(estPrice: 0.0)
-
+                    //.sheet(isPresented: $sheetPresented) {
+                    //    CartList(estPrice: 0.0)
+                    
                     
                     Spacer()
                 }
@@ -182,4 +184,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
- 
+

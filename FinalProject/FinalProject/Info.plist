@@ -4,6 +4,17 @@
 <dict>
 	<key></key>
 	<string></string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.274460627382-dk94jo5fhqiek8f0uto88lc0iu0p9g6a</string>
+			</array>
+		</dict>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NeufileGrotesk-SemiBold.ttf</string>

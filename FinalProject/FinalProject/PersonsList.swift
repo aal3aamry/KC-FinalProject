@@ -59,11 +59,12 @@ struct PersonsList: View {
                    
                 
                 TabView(selection: self.$currentTab){
-                    photographers().tag(0)
-                DesList().tag(1)
-                    DevList().tag(2)
+                    DevList().tag(0)
+                    DesList().tag(1)
+                    photographers().tag(2)
+               
                 }
-                .tabViewStyle(.page(indexDisplayMode: .never))
+                .tabViewStyle(.page(indexDisplayMode: .always))
                     
 
 

@@ -24,6 +24,9 @@ struct ProfilePage: View {
     @State var LastName = ""
     @State var UserName = ""
     @State var PhoneNumber = ""
+    
+    
+    
 @State var Password = ""
      
     var body: some View {
@@ -49,6 +52,7 @@ struct ProfilePage: View {
 
 
                 }.padding()
+                        .shadow(color: .gray, radius: 10)
                     .actionSheet(isPresented: $showSheet) {
                         ActionSheet(title: Text("Select Photo"),
                                     message: Text("choose")
@@ -74,7 +78,6 @@ struct ProfilePage: View {
             }
             
             
-            Spacer()
                 
                 TextField("First Name *", text: $FirstName, onCommit: {
                     self.showName = true
@@ -104,6 +107,9 @@ struct ProfilePage: View {
                 .background(Color.white)
                 .cornerRadius(10)
                 .keyboardType(.numberPad)
+                .onReceive(PhoneNumber.publisher.collect()) {
+                        self.PhoneNumber = String($0.prefix(8))
+                    }
                 
                 
                 TextField("UserName *", text: $UserName)
@@ -133,15 +139,15 @@ struct ProfilePage: View {
             
      
               
-                    
-                    
+                    Spacer()
+           
                 NavigationLink(destination: ProfilePage2(FirstName: $FirstName)){
                     Text("Save & Continue")
                         .multilineTextAlignment(.center)
                     
                         .frame(width: 310, height: 30)
                     
-                        .padding()
+                        .padding(.all)
                         
                         .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
                         .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
@@ -150,7 +156,7 @@ struct ProfilePage: View {
                         
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .cornerRadius(10)
-                    }
+                    }.shadow(color: .gray.opacity(0.7), radius: 8)
                 Spacer()
                 }
             

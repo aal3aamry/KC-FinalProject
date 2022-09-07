@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "niu-cafe",
+    "name" : "Niu-Cafe",
+    "image" : "niu-cafe",
+    "latitude" : 29.3735,
+    "longitude" : 47.9767
+  },
+  {
+    "id" : "with-cafe",
+    "name" : "With Cafe",
+    "image" : "with-cafe",
+    "latitude" : 29.3689,
+    "longitude" : 47.9697
+  },
+  {
+    "id" : "masaha13-cafe",
+    "name" : "Masaha 13 Cafe",
+    "image" : "masaha13-cafe",
+    "latitude" : 29.3413,
+    "longitude" : 47.9383
+  },
+  {
+    "id" : "magnet-cafe",
+    "name" : "Magnet Cafe",
+    "image" : "magnet-cafe",
+    "latitude" : 29.3750,
+    "longitude" : 47.9899
+  }
+]

@@ -67,9 +67,11 @@ struct DevList: View {
                 .background((Color(red: 0.953, green: 0.953, blue: 0.953)))
         List(Persons){ Person in
            PersonRow(Person: Person)
-            
+                
           
-         }        .background((Color(red: 0.894, green: 0.894, blue: 0.894)))
+         }
+        
+        .background((Color(red: 0.894, green: 0.894, blue: 0.894)))
         }
         }
     }

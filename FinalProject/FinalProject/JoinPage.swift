@@ -28,14 +28,22 @@ struct JoinPage: View {
     @State var FirstName = ""
     @State var LastName = ""
   
-
+//
+    
+    @State var isAlertPresented : Bool = false
+    
+    
+    
     var body: some View {
         
         
         ZStack{
             (Color(red: 0.7803921568627451, green: 0.8549019607843137, blue: 0.8274509803921568)).ignoresSafeArea()
             
+            
             VStack{
+                
+                Spacer()
                 Text("Become Part Of Our Family By One Click!")
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
                     .multilineTextAlignment(.center)
@@ -55,6 +63,7 @@ struct JoinPage: View {
 
 
                 }.padding()
+                    .shadow(color: .gray, radius: 10)
                     .actionSheet(isPresented: $showSheet) {
                         ActionSheet(title: Text("Select Photo"),
                                     message: Text("choose")
@@ -82,6 +91,7 @@ struct JoinPage: View {
                 
                 
                //
+                
                 
                  TextField("First Name *", text: $FirstName)
                  .foregroundColor(.black)
@@ -145,18 +155,20 @@ struct JoinPage: View {
                  .background(Color.white)
                  .cornerRadius(10)
                  
-             
-                
                 
                 Button {
-                    Spacer()
+          
+                    isAlertPresented.toggle()
+                    
+                    
                 } label: {
+                    
                     Text("Join Now!")
                         .multilineTextAlignment(.center)
                     
                         .frame(width: 310, height: 30)
                     
-                        .padding()
+                        .padding(.all)
                         
                         .font(Font.custom("NeufileGrotesk-SemiBold",size:25))
                         .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
@@ -165,9 +177,18 @@ struct JoinPage: View {
                         
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .cornerRadius(10)
+                    
+                    
+                    .alert(isPresented: $isAlertPresented) {
+                        Alert(title: Text("Thank You For Using MT"), message: Text("We Will Contact You Later After Verifying Your Info "), dismissButton: .default(Text("Okay")))
+                        //Text("From \(Person.price, specifier: //"%.2f") KD")
+                    }
+                    
+                    
                 }.shadow(color: .gray.opacity(0.7), radius: 8)
+                    .padding(30)
                 
-                
+Spacer()
             }
         }.sheet(isPresented: $showImagePicker){
             

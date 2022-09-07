@@ -12,7 +12,7 @@ struct PHRow: View {
     var Person: Person
     var body: some View {
         VStack(alignment: .center){
-            HStack(spacing: -10){
+            HStack(spacing: 0){
             Image(Person.image)
                 .resizable()
                 .scaledToFit()

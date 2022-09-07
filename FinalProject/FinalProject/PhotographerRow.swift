@@ -14,7 +14,7 @@ struct PhotographerRow: View {
         VStack(alignment: .center){
             
             
-            HStack(spacing: -10){
+            HStack(spacing: 0){
                 Image(Photographer.image)
                 .resizable()
                 .scaledToFit()

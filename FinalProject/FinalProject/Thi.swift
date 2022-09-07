@@ -15,7 +15,8 @@ struct Thi: View {
     @State var UserName = ""
     @State var BusinessEmail = ""
     @State var Password = ""
-    
+    @State var isAlertPresented : Bool = false
+
     
     
     @State var fullscreenPresented = false
@@ -28,7 +29,7 @@ struct Thi: View {
             Spacer()
             
             VStack{
-        Text("Start With a 90 Days Trail of My Team")
+        Text("Start With a 90 Days Trial of My Team")
                 .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
                 .multilineTextAlignment(.center)
                 .frame(width: 380, height: 100)
@@ -94,6 +95,13 @@ struct Thi: View {
 
             
             Button( action:{ fullscreenPresented.toggle()
+                if FirstName == ""{
+                    
+                    isAlertPresented.toggle()
+
+                    
+                    
+                }
             })
             {
             
@@ -111,13 +119,18 @@ struct Thi: View {
                     
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .cornerRadius(10)
+                
+                
+                    .alert(isPresented: $isAlertPresented) {
+                        Alert(title: Text("E404"), message: Text("Please Fill in the mandatory fields"), dismissButton: .default(Text(("Okay"))))
+                        
             }
            
         
             
             
             
-            
+            }
             
             Text("*No Credit Card Required")
                 .font(Font.custom("NeufileGrotesk-SemiBold",size:15))

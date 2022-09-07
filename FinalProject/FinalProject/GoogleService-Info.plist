@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>274460627382-dk94jo5fhqiek8f0uto88lc0iu0p9g6a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.274460627382-dk94jo5fhqiek8f0uto88lc0iu0p9g6a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBMZH5mHZVKefIm7R-SdmXKtk0HMDCEJtc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>274460627382</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alamry.MT</string>
+	<key>PROJECT_ID</key>
+	<string>my-team-bcafe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-team-bcafe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:274460627382:ios:fe6ae38b78ef86054f3117</string>
+</dict>
+</plist>

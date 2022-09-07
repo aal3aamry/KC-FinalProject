@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		EC2401AA28BD444B006AC8D0 /* Fourht.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2401A928BD444B006AC8D0 /* Fourht.swift */; };
 		EC44129F28C345A9000872B5 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44129E28C345A9000872B5 /* FaceID.swift */; };
+		EC52851528C611DB00644DDA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52851428C611DB00644DDA /* MapView.swift */; };
+		EC52851728C6179100644DDA /* MeetingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52851628C6179100644DDA /* MeetingLocation.swift */; };
+		EC52851928C619E200644DDA /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52851828C619E200644DDA /* LocationModel.swift */; };
+		EC52851B28C61CAE00644DDA /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52851A28C61CAE00644DDA /* Decoder.swift */; };
+		EC52852228C691FB00644DDA /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = EC52851E28C691FB00644DDA /* locations.json */; };
+		EC52852528C69F0A00644DDA /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = EC52852428C69F0A00644DDA /* location.json */; };
+		EC52852728C73C9200644DDA /* LinkPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52852628C73C9200644DDA /* LinkPreviews.swift */; };
+		EC52852928C7411600644DDA /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52852828C7411600644DDA /* MyMapView.swift */; };
 		EC55AA7128C243F00036B3BB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7028C243F00036B3BB /* ProfilePage.swift */; };
 		EC55AA7328C266700036B3BB /* ProfilePage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7228C266700036B3BB /* ProfilePage2.swift */; };
 		EC55AA7528C277F60036B3BB /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55AA7428C277F60036B3BB /* PaymentsView.swift */; };
@@ -44,11 +52,23 @@
 		ECDC421728BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */; };
 		ECDC421928BD17430026FBCD /* Sec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421828BD17430026FBCD /* Sec.swift */; };
 		ECDC421D28BD21940026FBCD /* Thi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC421C28BD21940026FBCD /* Thi.swift */; };
+		ECDD775528C8B544002C9975 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECDD775428C8B544002C9975 /* GoogleService-Info.plist */; };
+		ECDD775828C8B69E002C9975 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECDD775728C8B69E002C9975 /* FirebaseAnalytics */; };
+		ECDD775A28C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */; };
+		ECE4CB8928C89E01003A65B6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC2401A928BD444B006AC8D0 /* Fourht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourht.swift; sourceTree = "<group>"; };
 		EC44129E28C345A9000872B5 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
+		EC52851428C611DB00644DDA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EC52851628C6179100644DDA /* MeetingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingLocation.swift; sourceTree = "<group>"; };
+		EC52851828C619E200644DDA /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		EC52851A28C61CAE00644DDA /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		EC52851E28C691FB00644DDA /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		EC52852428C69F0A00644DDA /* location.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = location.json; sourceTree = "<group>"; };
+		EC52852628C73C9200644DDA /* LinkPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviews.swift; sourceTree = "<group>"; };
+		EC52852828C7411600644DDA /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		EC55AA7028C243F00036B3BB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		EC55AA7228C266700036B3BB /* ProfilePage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage2.swift; sourceTree = "<group>"; };
 		EC55AA7428C277F60036B3BB /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
@@ -86,6 +106,8 @@
 		ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeufileGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
 		ECDC421828BD17430026FBCD /* Sec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec.swift; sourceTree = "<group>"; };
 		ECDC421C28BD21940026FBCD /* Thi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thi.swift; sourceTree = "<group>"; };
+		ECDD775428C8B544002C9975 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDD775828C8B69E002C9975 /* FirebaseAnalytics in Frameworks */,
+				ECDD775A28C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				ECDC421328BD04510026FBCD /* Info.plist */,
+				ECDD775428C8B544002C9975 /* GoogleService-Info.plist */,
+				ECE4CB8828C89E00003A65B6 /* Launch Screen.storyboard */,
 				ECC7C23728BA2D6200533606 /* FinalProjectApp.swift */,
 				ECDC421828BD17430026FBCD /* Sec.swift */,
 				ECC7C23928BA2D6200533606 /* ContentView.swift */,
@@ -151,6 +177,14 @@
 				EC55AA7428C277F60036B3BB /* PaymentsView.swift */,
 				EC55AA7628C278090036B3BB /* SupportView.swift */,
 				EC55AA7828C278490036B3BB /* SuggestedPlacesView.swift */,
+				EC52851428C611DB00644DDA /* MapView.swift */,
+				EC52851A28C61CAE00644DDA /* Decoder.swift */,
+				EC52852828C7411600644DDA /* MyMapView.swift */,
+				EC52851628C6179100644DDA /* MeetingLocation.swift */,
+				EC52851828C619E200644DDA /* LocationModel.swift */,
+				EC52851E28C691FB00644DDA /* locations.json */,
+				EC52852628C73C9200644DDA /* LinkPreviews.swift */,
+				EC52852428C69F0A00644DDA /* location.json */,
 				ECC7C23B28BA2D6600533606 /* Assets.xcassets */,
 				ECDC421428BD0A930026FBCD /* NeufileGrotesk-Medium.ttf */,
 				ECDC421628BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf */,
@@ -184,6 +218,10 @@
 			dependencies = (
 			);
 			name = FinalProject;
+			packageProductDependencies = (
+				ECDD775728C8B69E002C9975 /* FirebaseAnalytics */,
+				ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */,
+			);
 			productName = FinalProject;
 			productReference = ECC7C23428BA2D6200533606 /* FinalProject.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +250,9 @@
 				Base,
 			);
 			mainGroup = ECC7C22B28BA2D6200533606;
+			packageReferences = (
+				ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ECC7C23528BA2D6200533606 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,6 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC7C23F28BA2D6600533606 /* Preview Assets.xcassets in Resources */,
+				EC52852528C69F0A00644DDA /* location.json in Resources */,
+				ECDD775528C8B544002C9975 /* GoogleService-Info.plist in Resources */,
+				ECE4CB8928C89E01003A65B6 /* Launch Screen.storyboard in Resources */,
+				EC52852228C691FB00644DDA /* locations.json in Resources */,
 				ECDC421728BD0AD60026FBCD /* NeufileGrotesk-SemiBold.ttf in Resources */,
 				ECDC421228BD04270026FBCD /* NeufileGrotesk_font in Resources */,
 				ECDC421528BD0A930026FBCD /* NeufileGrotesk-Medium.ttf in Resources */,
@@ -261,17 +306,23 @@
 				ECA820C128C0FB7E00F52AFE /* DevList.swift in Sources */,
 				ECBD4F1C28BEB57F00A64EAD /* photographers.swift in Sources */,
 				ECDC421D28BD21940026FBCD /* Thi.swift in Sources */,
+				EC52851728C6179100644DDA /* MeetingLocation.swift in Sources */,
+				EC52852728C73C9200644DDA /* LinkPreviews.swift in Sources */,
 				ECBD4F2828BF027D00A64EAD /* ImagePicker.swift in Sources */,
+				EC52851B28C61CAE00644DDA /* Decoder.swift in Sources */,
 				ECC7C23828BA2D6200533606 /* FinalProjectApp.swift in Sources */,
 				ECA820CB28C123CC00F52AFE /* DesList.swift in Sources */,
 				ECDC421928BD17430026FBCD /* Sec.swift in Sources */,
 				EC98695228BFE6E2004145F3 /* PersonsList.swift in Sources */,
+				EC52851528C611DB00644DDA /* MapView.swift in Sources */,
 				ECA820B928C0E44800F52AFE /* PersonScroll.swift in Sources */,
 				EC55AA7928C278490036B3BB /* SuggestedPlacesView.swift in Sources */,
+				EC52852928C7411600644DDA /* MyMapView.swift in Sources */,
 				ECBD4F2028BEC7D800A64EAD /* TabHome.swift in Sources */,
 				ECA820B728C097C900F52AFE /* CartList.swift in Sources */,
 				EC55AA7528C277F60036B3BB /* PaymentsView.swift in Sources */,
 				ECA820C328C10ACE00F52AFE /* PhotographerModel.swift in Sources */,
+				EC52851928C619E200644DDA /* LocationModel.swift in Sources */,
 				ECA820BD28C0EBD000F52AFE /* PhotographerPersonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +463,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aal3aamry.FinalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alamry.MyTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,6 +498,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aal3aamry.FinalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alamry.MyTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -483,6 +536,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECDD775728C8B69E002C9975 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ECDD775928C8B69E002C9975 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDD775628C8B69E002C9975 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC7C22C28BA2D6200533606 /* Project object */;
 }

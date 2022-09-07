@@ -26,7 +26,7 @@ struct ProfilePage2: View {
                     .font(Font.custom("NeufileGrotesk-SemiBold",size:28))
                     .multilineTextAlignment(.center)
                     .frame(width: 380, height: 120)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.black)
          
                 Spacer()
                 
@@ -60,11 +60,13 @@ struct ProfilePage2: View {
                     
                     
                     
-                }.navigationTitle(Text("Payments"))
+                }.navigationTitle(Text("Dashboard"))
                 }
                 
                 
                 Divider()
+                
+                NavigationLink(destination: SupportView()){
                 HStack{
                     Image(systemName: "info.circle")
                         .multilineTextAlignment(.center)
@@ -89,8 +91,12 @@ struct ProfilePage2: View {
                         .foregroundColor(Color.black)
                     
                      Spacer()
+                }.navigationTitle(Text("Dashboard"))
                 }
                 Divider()
+                
+                
+                NavigationLink(destination: SuggestedPlacesView()){
                 HStack{
                     Image(systemName: "map")
                         .multilineTextAlignment(.center)
@@ -115,6 +121,8 @@ struct ProfilePage2: View {
                         .foregroundColor(Color.black)
                     
                      Spacer()
+                }.navigationTitle(Text("Dashboard"))
+                        .navigationBarTitleDisplayMode(.inline)
                 }
                 
                 Spacer()
